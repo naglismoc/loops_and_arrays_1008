@@ -239,7 +239,7 @@ while should_roll_dice:
 print("---------------")
 start_time = time.time()
 count = 0
-times = 10000000
+times = 100
 for i in range(times):
     while True:
         count +=1
@@ -251,4 +251,14 @@ print(f'kauliuka meteme {count} kartu. tikimybe isridenti 6-ta yra {times / coun
 end_time = time.time()
 print(f'skaiciavimai truko {end_time - start_time}')
 
+for y in range(1, 11):
+    for x in range(1,11):
+        print(x * y, end=" ")
+    print()
+print("---------------")
 
+for y in range(1, 11):
+    row = ""
+    for x in range(1,11):
+        row += str(x * y) + " "
+    print(row)
